@@ -38,6 +38,25 @@
 
 .bar {
     flex:1;
-    height: 100%;
-    background-color: red;
+    position: relative;
+}
+
+.tooltip {
+    display: block;
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: max-content;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    transform: translate(50%, -120%);
+    opacity: 0;
+    z-index: 10;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.bar:hover .tooltip{
+    opacity: 1;
 }

@@ -3,10 +3,11 @@ import React, { useMemo } from "react";
 import "./barchart.css";
 
 const Bar = ({ name, color, height, ticketCount }) => (
-  <div
-    className="bar"
-    style={{ backgroundColor: color, height: `${height}%` }}
-  ></div>
+  <div className="bar" style={{ backgroundColor: color, height: `${height}%` }}>
+    <div className="tooltip">
+      {name} - {ticketCount}
+    </div>
+  </div>
 );
 
 const BarChart = ({ data }) => {
