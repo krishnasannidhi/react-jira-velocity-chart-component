@@ -11,6 +11,10 @@
     border: 2px solid #414141;
     border-right-width: 0;
     border-top-width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap:20px;
 }
 
 .y-axis-label, .x-axis-label {
@@ -30,4 +34,10 @@
     transform: translateX(-50%);
     margin-top: 10px;
     left: 50%;
+}
+
+.bar {
+    flex:1;
+    height: 100%;
+    background-color: red;
 }

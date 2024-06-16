@@ -4,7 +4,7 @@ import BarChart from "./components/BarChart";
 import { CHART_DATA } from "./data/chart";
 
 function App() {
-  const [showChart, setShowChart] = useState(false);
+  const [showChart, setShowChart] = useState(true);
   return (
     <div className="container">
       <h1 className="title">JIRA Velocity Chart Component</h1>
